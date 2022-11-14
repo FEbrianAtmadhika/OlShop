@@ -28,6 +28,11 @@
 		F100EC7821BB405C80BB8665 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF20B5A99EE54A189CE8193C /* Roboto-Thin.ttf */; };
 		18206DEB8F8B475E93A6BE00 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DC047965CAA46E9B4CEB0B1 /* Roboto-ThinItalic.ttf */; };
 		DCF4A5832AA94B6AB5CD86AD /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 77A29D3385E8492CA4EDA5D3 /* index.js */; };
+		C87E9E154A3F40D9B5BA94DD /* Caudex-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB5EA2AC184716B6C05A05 /* Caudex-Bold.ttf */; };
+		447AC9E1D8E9468CA058BD61 /* Caudex-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FEC577695A84F6AA90032AD /* Caudex-BoldItalic.ttf */; };
+		194CEDC6B45F4488BBFFC265 /* Caudex-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D5104F26680476E9B7911D2 /* Caudex-Italic.ttf */; };
+		EA21838FD36644549B45C0E8 /* Caudex-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A7EE3F2EED94A4F970D6C54 /* Caudex-Regular.ttf */; };
+		8D65881F9AC44FB48D07B4C9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35CDB4543CA64002AC66F388 /* OFL.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		AF20B5A99EE54A189CE8193C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../android/src/assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		8DC047965CAA46E9B4CEB0B1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../android/src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		77A29D3385E8492CA4EDA5D3 /* index.js */ = {isa = PBXFileReference; name = "index.js"; path = "../android/src/assets/fonts/index.js"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2FFB5EA2AC184716B6C05A05 /* Caudex-Bold.ttf */ = {isa = PBXFileReference; name = "Caudex-Bold.ttf"; path = "../android/src/assets/fonts/Caudex-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FEC577695A84F6AA90032AD /* Caudex-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Caudex-BoldItalic.ttf"; path = "../android/src/assets/fonts/Caudex-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D5104F26680476E9B7911D2 /* Caudex-Italic.ttf */ = {isa = PBXFileReference; name = "Caudex-Italic.ttf"; path = "../android/src/assets/fonts/Caudex-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A7EE3F2EED94A4F970D6C54 /* Caudex-Regular.ttf */ = {isa = PBXFileReference; name = "Caudex-Regular.ttf"; path = "../android/src/assets/fonts/Caudex-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35CDB4543CA64002AC66F388 /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../android/src/assets/fonts/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +204,11 @@
 				AF20B5A99EE54A189CE8193C /* Roboto-Thin.ttf */,
 				8DC047965CAA46E9B4CEB0B1 /* Roboto-ThinItalic.ttf */,
 				77A29D3385E8492CA4EDA5D3 /* index.js */,
+				2FFB5EA2AC184716B6C05A05 /* Caudex-Bold.ttf */,
+				6FEC577695A84F6AA90032AD /* Caudex-BoldItalic.ttf */,
+				5D5104F26680476E9B7911D2 /* Caudex-Italic.ttf */,
+				9A7EE3F2EED94A4F970D6C54 /* Caudex-Regular.ttf */,
+				35CDB4543CA64002AC66F388 /* OFL.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -309,6 +324,11 @@
 				F100EC7821BB405C80BB8665 /* Roboto-Thin.ttf in Resources */,
 				18206DEB8F8B475E93A6BE00 /* Roboto-ThinItalic.ttf in Resources */,
 				DCF4A5832AA94B6AB5CD86AD /* index.js in Resources */,
+				C87E9E154A3F40D9B5BA94DD /* Caudex-Bold.ttf in Resources */,
+				447AC9E1D8E9468CA058BD61 /* Caudex-BoldItalic.ttf in Resources */,
+				194CEDC6B45F4488BBFFC265 /* Caudex-Italic.ttf in Resources */,
+				EA21838FD36644549B45C0E8 /* Caudex-Regular.ttf in Resources */,
+				8D65881F9AC44FB48D07B4C9 /* OFL.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,11 @@
 import {Dimensions, StyleSheet} from 'react-native';
 export default StyleSheet.create({
   card: {
-    width: 180,
+    width: 160,
     height: 250,
     marginHorizontal: 15,
     marginVertical: 5,
+    alignSelf: 'center',
   },
   cardcontainer: {
     flex: 1,
@@ -12,8 +13,9 @@ export default StyleSheet.create({
   image: {
     width: '100%',
     height: '84%',
-    resizeMode: 'cover',
+    resizeMode: 'stretch',
     marginBottom: 9,
+    borderRadius: 15,
   },
   desc: {
     flexDirection: 'row',

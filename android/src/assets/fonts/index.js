@@ -1,5 +1,5 @@
 export const fonts = {
-  primary: {
+  Roboto: {
     bold: 'Roboto-Bold',
     regular: 'Roboto-Regular',
     black: 'Roboto-Black',
@@ -13,7 +13,13 @@ export const fonts = {
     thin: 'Roboto-Thin',
     thinitalic: 'Roboto-ThinItalic',
   },
-  secondary: {
+  HennyPenny: {
     regular: 'HennyPenny-Regular',
+  },
+  Caudex: {
+    regular: 'Caudex-Regular',
+    bold: 'Caudex-Bold',
+    bolditalic: 'Caudex-BoldItalic',
+    italic: 'Caudex-Italic',
   },
 };

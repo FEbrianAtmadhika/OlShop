@@ -8,6 +8,8 @@ import SplashScreen from '../../screen/SplashScreen/index';
 import Login from '../../screen/Login/Index';
 import Register from '../../screen/Register/index';
 import Home from '../../screen/Home/index';
+import Product from '../../screen/Product';
+import Details from '../../screen/Details';
 const Stack = createNativeStackNavigator();
 
 function Index() {
@@ -20,6 +22,8 @@ function Index() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Product" component={Product} />
+        <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -62,6 +62,7 @@ export default StyleSheet.create({
     height: 40,
     width: '90%',
     marginTop: 20,
+    alignSelf: 'center',
   },
   login: {
     color: '#FFF',
@@ -74,4 +75,5 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
+  textbutton: {},
 });

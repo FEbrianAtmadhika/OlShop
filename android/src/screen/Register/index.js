@@ -83,6 +83,7 @@ export default function Index({navigation}) {
           label={'Sign Up'}
           type={'yellow'}
           btnStyle={styles.button}
+          textstyle={styles.textbutton}
           onPress={onPressHandler}
         />
         <View style={styles.footer}>

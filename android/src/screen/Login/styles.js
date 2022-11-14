@@ -52,6 +52,7 @@ export default StyleSheet.create({
   button: {
     height: 50,
     width: '80%',
+    alignSelf: 'center',
   },
   signup: {
     fontFamily: 'Roboto-Regular',
@@ -65,5 +66,8 @@ export default StyleSheet.create({
   footer: {
     flexDirection: 'row',
     justifyContent: 'center',
+  },
+  textStyle: {
+    color: 'black',
   },
 });

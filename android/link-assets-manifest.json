@@ -2,12 +2,32 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "android/src/assets/fonts/Caudex-Bold.ttf",
+      "sha1": "6ee15b666147d3634c878d47d3c74af9bc341bed"
+    },
+    {
+      "path": "android/src/assets/fonts/Caudex-BoldItalic.ttf",
+      "sha1": "65c599ae5ee96f2fd4d3764f288a53ac2c479105"
+    },
+    {
+      "path": "android/src/assets/fonts/Caudex-Italic.ttf",
+      "sha1": "8298957df257312b98ac920e2b9b170a1e73937c"
+    },
+    {
+      "path": "android/src/assets/fonts/Caudex-Regular.ttf",
+      "sha1": "a99401bbcbcb6d6fda2bfb79d2a793676ffb5ac7"
+    },
+    {
       "path": "android/src/assets/fonts/HennyPenny-Regular.ttf",
       "sha1": "7c372c76f50c940731c06c7c7a299c438bd90a47"
     },
     {
       "path": "android/src/assets/fonts/index.js",
       "sha1": "359fb5cd26ab2869c8b35142c7a0c689c0299601"
+    },
+    {
+      "path": "android/src/assets/fonts/OFL.txt",
+      "sha1": "ac883a5cd4a741d0d77faace4ddb574dd22682b7"
     },
     {
       "path": "android/src/assets/fonts/Roboto-Black.ttf",

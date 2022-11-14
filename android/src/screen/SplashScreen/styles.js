@@ -23,9 +23,14 @@ export default StyleSheet.create({
     flex: 1,
   },
   button: {
+    backgroundColor: '#304B3B',
+    alignSelf: 'center',
     width: '80%',
     position: 'absolute',
     top: '85%',
     height: 40,
+  },
+  statusbar: {
+    backgroundColor: '#FDDE67',
   },
 });
