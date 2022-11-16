@@ -7,6 +7,7 @@ import icondate from '../../assets/images/date.png';
 import DatePicker from 'react-native-date-picker';
 import CheckBox from '@react-native-community/checkbox';
 import Btn from '../../component/Button';
+import font from '../../Stylish/Font';
 export default function Index({navigation}) {
   const [isSecureEntry, setIsSecureEntry] = useState(true);
   const [date, setDate] = useState(new Date());
@@ -18,8 +19,8 @@ export default function Index({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <Text style={styles.header}>Lets get started</Text>
-        <Text style={styles.subheader}>
+        <Text style={font.Robotoheader}>Lets get started</Text>
+        <Text style={font.Robotosubheader}>
           Create an account to veco to get all features
         </Text>
         <TextInput
@@ -71,25 +72,25 @@ export default function Index({navigation}) {
             style={styles.checkbox}
           />
           <View style={styles.content}>
-            <Text style={styles.aggrement}>
+            <Text style={font.Roboto12White}>
               I have read and accepted the General
             </Text>
-            <Text style={styles.aggrement}>
+            <Text style={font.Roboto12White}>
               Terms and Conditions of this app.
             </Text>
           </View>
         </View>
         <Btn
           label={'Sign Up'}
-          type={'yellow'}
+          type={'black'}
           btnStyle={styles.button}
-          textstyle={styles.textbutton}
+          textstyle={font.Roboto20center}
           onPress={onPressHandler}
         />
         <View style={styles.footer}>
-          <Text style={styles.login}>Have an account yet?</Text>
+          <Text style={font.Roboto12White}>Have an account yet?</Text>
           <TouchableOpacity onPress={onPressHandler}>
-            <Text style={styles.login}> Log in</Text>
+            <Text style={font.Roboto12White}> Log in</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

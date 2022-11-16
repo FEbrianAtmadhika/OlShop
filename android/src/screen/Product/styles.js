@@ -14,10 +14,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     position: 'relative',
   },
-  iconback: {
-    width: 10,
-    height: 15,
-  },
   searchti: {
     height: 35,
     width: '75%',
@@ -54,8 +50,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#304B3B',
     height: '100%',
-    width: 100,
-    justifyContent: 'space-between',
+    width: 150,
+    justifyContent: 'space-around',
     alignItems: 'center',
     paddingHorizontal: 10,
     borderRadius: 5,

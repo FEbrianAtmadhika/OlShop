@@ -4,21 +4,13 @@ import styles from './styles';
 import Btn from '../../component/Button';
 import TextInput from '../../component/TextInput';
 import search from '../../assets/images/search.png';
-import P1 from '../../assets/images/P1.png';
-import P2 from '../../assets/images/P2.png';
-import P3 from '../../assets/images/P3.png';
-import P4 from '../../assets/images/P4.png';
 import bg from '../../assets/images/bghome.png';
 import Card from '../../component/CardView/index';
-import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
-import {SectionGrid} from 'react-native-super-grid';
+import {ScrollView} from 'react-native-gesture-handler';
+import Font from '../../Stylish/Font';
+import Array from '../../component/Array/index';
 export default function Index({navigation}) {
-  const [produk, setProduk] = useState([
-    {nama: 'Black Jacket', image: P1, harga: '$90', id: '1'},
-    {nama: 'Pink Shoes', image: P2, harga: '$90', id: '2'},
-    {nama: 'Shirt', image: P3, harga: '$90', id: '3'},
-    {nama: 'Sneaker', image: P4, harga: '$90', id: '4'},
-  ]);
+  const [produk, setProduk] = useState(Array);
   const [second, setSecond] = useState(10);
   const [minute, setMinute] = useState(0);
   const [hour, setHour] = useState(12);
@@ -46,7 +38,7 @@ export default function Index({navigation}) {
     <ScrollView>
       <View style={styles.container}>
         <View style={styles.header}>
-          <Text style={styles.textheader}>Vēcō</Text>
+          <Text style={Font.HennyPenny30}>Vēcō</Text>
           <TextInput
             placeholder={'Search Here'}
             keyboardtype={'text'}
@@ -55,63 +47,64 @@ export default function Index({navigation}) {
         </View>
         <View style={styles.news}>
           <Image source={bg} style={styles.bgnews}></Image>
-          <Text style={[styles.title, {fontSize: 12}]}>
-            UP TO 20% DISCOUNT ON
-          </Text>
-          <Text style={styles.caudex}>Girl's Fashion</Text>
-          <Text style={styles.title}>
+          <Text style={Font.Roboto12White}>UP TO 20% DISCOUNT ON</Text>
+          <Text style={Font.caudex36white}>Girl's Fashion</Text>
+          <Text style={Font.Roboto8white}>
             Lorem ipsum dolor sit amet, consectetur
           </Text>
-          <Text style={styles.title}>
+          <Text style={Font.Roboto8white}>
             adipiscing elit. Et vestibulum amet elementum
           </Text>
           <Btn
             label={'EXPLORE NOW'}
-            textstyle={styles.textbutton}
-            type={'yellow'}
+            textstyle={Font.Roboto8}
+            type={'black'}
             btnStyle={styles.button}
-            textStyle={styles.textbutton}
+            textStyle={Font.Roboto10}
             onPress={onPressHandlerProduct}></Btn>
           <View style={styles.navbut}>
             <Btn
               btnStyle={styles.navbutton}
-              type={'yellow'}
+              type={'black'}
               label={'Flash Sale'}
-              textstyle={styles.navbuttontxt}></Btn>
+              textstyle={Font.Roboto10}></Btn>
             <Btn
               btnStyle={styles.navbutton}
-              type={'yellow'}
+              type={'black'}
               label={'Best Seller'}
-              textstyle={styles.navbuttontxt}></Btn>
+              textstyle={Font.Roboto10}></Btn>
             <Btn
               btnStyle={styles.navbutton}
-              type={'yellow'}
+              type={'black'}
               label={'New Collection'}
-              textstyle={styles.navbuttontxt}></Btn>
+              textstyle={Font.Roboto10}></Btn>
             <Btn
               btnStyle={styles.navbutton}
-              type={'yellow'}
+              type={'black'}
               label={'Recomendation'}
-              textstyle={styles.navbuttontxt}></Btn>
+              textstyle={Font.Roboto10}></Btn>
           </View>
         </View>
         <View style={styles.viewtimer}>
-          <Text style={styles.txttimer}> Flash Sale </Text>
+          <Text style={Font.caudex24black}> Flash Sale </Text>
           <Text style={styles.timer}>{hour}</Text>
-          <Text style={styles.txttimer}> : </Text>
+          <Text style={Font.caudex24black}> : </Text>
           <Text style={styles.timer}>{minute}</Text>
-          <Text style={styles.txttimer}> : </Text>
+          <Text style={Font.caudex24black}> : </Text>
           <Text style={styles.timer}>{second}</Text>
         </View>
         <View style={styles.card}>
           <FlatList
-            data={produk}
+            data={produk.array}
             renderItem={({item}) => {
               return (
                 <Card
                   image={item.image}
                   nama={item.nama}
-                  harga={item.harga}></Card>
+                  harga={item.harga}
+                  onPress={() =>
+                    navigation.navigate('Details', {data: item})
+                  }></Card>
               );
             }}
             keyExtractor={produk => produk.id.toString()}

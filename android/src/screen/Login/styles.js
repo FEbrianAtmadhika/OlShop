@@ -9,24 +9,7 @@ export default StyleSheet.create({
     width: 260,
     height: 176,
     alignSelf: 'center',
-    marginTop: '10%',
-  },
-  header: {
-    fontFamily: 'Roboto-Regular',
-    fontSize: 36,
-    fontWeight: '700',
-    marginTop: 24,
-    color: 'white',
-    alignSelf: 'center',
-  },
-  subheader: {
-    fontFamily: 'Roboto-Regular',
-    fontSize: 16,
-    fontWeight: '400',
-    marginTop: 21,
-    color: 'white',
-    marginBottom: 15,
-    alignSelf: 'center',
+    marginTop: '5%',
   },
   tisty: {
     width: '80%',
@@ -41,33 +24,30 @@ export default StyleSheet.create({
     bottom: 30,
     position: 'absolute',
   },
-  forgot: {
-    fontFamily: 'Roboto-Regular',
-    fontSize: 12,
-    color: 'white',
-    marginBottom: 15,
-    alignSelf: 'flex-end',
-    paddingRight: 50,
-  },
   button: {
     height: 50,
     width: '80%',
     alignSelf: 'center',
   },
-  signup: {
-    fontFamily: 'Roboto-Regular',
-    fontSize: 14,
-    fontWeight: '400',
-    marginTop: 5,
-    color: 'white',
-    marginBottom: 15,
-    alignSelf: 'center',
-  },
-  footer: {
+  row: {
     flexDirection: 'row',
     justifyContent: 'center',
   },
+  coulumb: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   textStyle: {
     color: 'black',
+  },
+  smallbut: {
+    height: 52,
+    width: 136,
+    borderRadius: 10,
+    marginHorizontal: 6,
+    marginVertical: 5,
+  },
+  icon: {
+    marginRight: 10,
   },
 });

@@ -6,22 +6,6 @@ export default StyleSheet.create({
     paddingHorizontal: 45,
     borderRadius: 20,
   },
-  header: {
-    fontFamily: 'Roboto-Reguler',
-    fontSize: 40,
-    color: 'white',
-    alignSelf: 'center',
-    fontWeight: '700',
-    marginTop: 30,
-  },
-  subheader: {
-    fontFamily: 'Roboto-Normal',
-    fontSize: 16,
-    color: 'white',
-    fontWeight: '400',
-    alignSelf: 'center',
-    marginTop: 18,
-  },
   iconpass: {
     width: 20,
     height: 20,
@@ -52,28 +36,15 @@ export default StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'flex-start',
   },
-  aggrement: {
-    color: '#FFF',
-    fontFamily: 'Roboto-Regular',
-    fontWeight: '400',
-    fontSize: 12,
-  },
   button: {
     height: 40,
     width: '90%',
     marginTop: 20,
     alignSelf: 'center',
   },
-  login: {
-    color: '#FFF',
-    fontFamily: 'Roboto-Regular',
-    fontWeight: '400',
-    fontSize: 12,
-    alignSelf: 'center',
-  },
   footer: {
     flexDirection: 'row',
     justifyContent: 'center',
+    marginTop: 10,
   },
-  textbutton: {},
 });

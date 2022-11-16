@@ -13,13 +13,6 @@ export default StyleSheet.create({
     marginTop: 15,
     alignItems: 'center',
   },
-  textheader: {
-    fontFamily: 'HennyPenny-Regular',
-    fontSize: 30,
-    fontWeight: '400',
-    marginRight: 9,
-    color: 'black',
-  },
   search: {
     width: '75%',
     height: 35,
@@ -49,19 +42,6 @@ export default StyleSheet.create({
   textbutton: {
     fontSize: 8,
   },
-  title: {
-    fontFamily: 'Roboto-Regular',
-    fontSize: 8,
-    color: 'white',
-    fontWeight: '500',
-  },
-  caudex: {
-    fontFamily: 'Caudex-Regular',
-    fontSize: 36,
-    fontWeight: '400',
-    marginRight: 9,
-    color: 'white',
-  },
   bgnews: {
     height: 180,
     width: 150,
@@ -73,12 +53,6 @@ export default StyleSheet.create({
     paddingVertical: 24,
     flexDirection: 'row',
     marginLeft: 10,
-  },
-  txttimer: {
-    fontFamily: 'Caudex-Regular',
-    fontSize: 24,
-    fontWeight: '700',
-    color: 'black',
   },
   timer: {
     color: 'black',
@@ -94,11 +68,6 @@ export default StyleSheet.create({
     width: '23%',
     borderRadius: 10,
     marginHorizontal: 2,
-  },
-  navbuttontxt: {
-    fontFamily: 'Roboto-Regular',
-    fontWeight: '400',
-    fontSize: 10,
   },
   navbut: {
     flexDirection: 'row',
