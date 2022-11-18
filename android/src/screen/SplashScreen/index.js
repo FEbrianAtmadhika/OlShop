@@ -1,18 +1,9 @@
-import {
-  View,
-  Text,
-  ScrollView,
-  ImageBackground,
-  Image,
-  StatusBar,
-} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import Btn from '../../component/Button';
 import bgimage from '../../assets/images/bgimage.png';
-import {NavigationHelpersContext} from '@react-navigation/native';
 import font from '../../Stylish/Font';
-import Font from '../../Stylish/Font';
 
 export default function Index({navigation}) {
   function onPressLogin() {
@@ -25,7 +16,7 @@ export default function Index({navigation}) {
         <Image source={bgimage} style={styles.image}></Image>
         <Btn
           label={'Shop Now'}
-          textstyle={Font.Roboto20center}
+          textstyle={font.Roboto20center}
           type={'white'}
           btnStyle={styles.button}
           onPress={onPressLogin}

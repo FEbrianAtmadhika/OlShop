@@ -10,6 +10,7 @@ import Register from '../../screen/Register/index';
 import Home from '../../screen/Home/index';
 import Product from '../../screen/Product';
 import Details from '../../screen/Details';
+import Reviews from '../../screen/Reviews';
 const Stack = createNativeStackNavigator();
 
 function Index() {
@@ -24,6 +25,7 @@ function Index() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Product" component={Product} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Reviews" component={Reviews} />
       </Stack.Navigator>
     </NavigationContainer>
   );

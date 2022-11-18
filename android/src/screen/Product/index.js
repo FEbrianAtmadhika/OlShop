@@ -2,12 +2,11 @@ import {
   View,
   Text,
   Image,
-  BackHandler,
   TouchableOpacity,
   FlatList,
+  ScrollView,
 } from 'react-native';
 import React, {useState} from 'react';
-import back from '../../assets/images/back.png';
 import search from '../../assets/images/search.png';
 import Btn from '../../component/Button';
 import Card from '../../component/CardView';
@@ -63,7 +62,7 @@ export default function Index({navigation}) {
             return (
               <Card
                 image={item.image}
-                nama={item.nama}
+                nama={item.detailrating.namarating}
                 harga={item.harga}
                 onPress={() =>
                   navigation.navigate('Details', {data: item})

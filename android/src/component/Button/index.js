@@ -18,6 +18,8 @@ export default function Index({
         return {color: '#FFFFFF'};
       case 'black':
         return {color: '#000000'};
+      case 'green':
+        return {color: '#304B3B'};
       default:
         return {};
     }

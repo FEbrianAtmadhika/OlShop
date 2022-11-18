@@ -2,7 +2,7 @@ import {Dimensions, StyleSheet} from 'react-native';
 export default StyleSheet.create({
   card: {
     width: 160,
-    height: 250,
+    height: 230,
     marginHorizontal: 15,
     marginVertical: 5,
     alignSelf: 'center',
@@ -13,7 +13,7 @@ export default StyleSheet.create({
   image: {
     width: '100%',
     height: '84%',
-    resizeMode: 'stretch',
+    resizeMode: 'cover',
     marginBottom: 9,
     borderRadius: 15,
   },

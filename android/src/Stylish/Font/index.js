@@ -122,4 +122,21 @@ export default StyleSheet.create({
     fontWeight: '400',
     fontSize: 12,
   },
+  Roboto16black: {
+    color: 'black',
+    fontFamily: 'Roboto-Regular',
+    fontWeight: '400',
+    fontSize: 16,
+  },
+  Roboto20w400: {
+    fontFamily: 'Roboto-Regular',
+    fontSize: 20,
+    fontWeight: '400',
+    color: 'white',
+  },
+  Roboto11: {
+    fontFamily: 'Roboto-Regular',
+    fontSize: 11,
+    fontWeight: '400',
+  },
 });
