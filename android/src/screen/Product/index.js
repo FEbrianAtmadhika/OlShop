@@ -13,7 +13,7 @@ import Card from '../../component/CardView';
 import TextInput from '../../component/TextInput';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Array from '../../component/Array';
+import Array from '../../component/Array/index';
 import Back from '../../component/back';
 import Font from '../../Stylish/Font';
 export default function Index({navigation}) {
@@ -62,7 +62,7 @@ export default function Index({navigation}) {
             return (
               <Card
                 image={item.image}
-                nama={item.detailrating.namarating}
+                nama={item.nama}
                 harga={item.harga}
                 onPress={() =>
                   navigation.navigate('Details', {data: item})

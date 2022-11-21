@@ -14,6 +14,7 @@ export default function Index({navigation}) {
   const [second, setSecond] = useState(10);
   const [minute, setMinute] = useState(0);
   const [hour, setHour] = useState(12);
+  const [activeMenu, setActiveMenu] = useState('Flash Sale');
 
   function onPressHandlerProduct() {
     navigation.navigate('Product');
@@ -64,24 +65,52 @@ export default function Index({navigation}) {
             onPress={onPressHandlerProduct}></Btn>
           <View style={styles.navbut}>
             <Btn
-              btnStyle={styles.navbutton}
+              btnStyle={[
+                styles.navbutton,
+                {
+                  backgroundColor:
+                    activeMenu == 'Flash Sale' ? '#FDDE67' : 'white',
+                },
+              ]}
               type={'black'}
               label={'Flash Sale'}
+              onPress={() => setActiveMenu('Flash Sale')}
               textstyle={Font.Roboto10}></Btn>
             <Btn
-              btnStyle={styles.navbutton}
+              btnStyle={[
+                styles.navbutton,
+                {
+                  backgroundColor:
+                    activeMenu == 'Best Seller' ? '#FDDE67' : 'white',
+                },
+              ]}
               type={'black'}
               label={'Best Seller'}
+              onPress={() => setActiveMenu('Best Seller')}
               textstyle={Font.Roboto10}></Btn>
             <Btn
-              btnStyle={styles.navbutton}
+              btnStyle={[
+                styles.navbutton,
+                {
+                  backgroundColor:
+                    activeMenu == 'New Collection' ? '#FDDE67' : 'white',
+                },
+              ]}
               type={'black'}
               label={'New Collection'}
+              onPress={() => setActiveMenu('New Collection')}
               textstyle={Font.Roboto10}></Btn>
             <Btn
-              btnStyle={styles.navbutton}
+              btnStyle={[
+                styles.navbutton,
+                {
+                  backgroundColor:
+                    activeMenu == 'Recomendation' ? '#FDDE67' : 'white',
+                },
+              ]}
               type={'black'}
               label={'Recomendation'}
+              onPress={() => setActiveMenu('Recomendation')}
               textstyle={Font.Roboto10}></Btn>
           </View>
         </View>

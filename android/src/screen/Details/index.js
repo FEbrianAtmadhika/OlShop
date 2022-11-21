@@ -15,6 +15,9 @@ export default function Index({route, navigation}) {
   function onPressReviewsHolder() {
     navigation.navigate('Reviews', {data: route.params.data});
   }
+  function onPressProfilShop() {
+    navigation.navigate('ProfilShop');
+  }
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -54,6 +57,7 @@ export default function Index({route, navigation}) {
             <View style={styles.view}>
               <Rating
                 type={'ada'}
+                indicator={'On'}
                 rating={route.params.data.rating}
                 onPress={onPressReviewsHolder}
               />
@@ -71,6 +75,7 @@ export default function Index({route, navigation}) {
                 type={'black'}
                 btnStyle={styles.btnshop}
                 label={'Go To Shop'}
+                onPress={onPressProfilShop}
                 textstyle={Font.Roboto12blackcenter}
               />
               <Btn

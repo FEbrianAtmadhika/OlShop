@@ -11,7 +11,7 @@ export default StyleSheet.create({
     color: '#304B3B',
   },
   yellow: {
-    color: 'FDDE67',
+    color: '#FDDE67',
   },
   white2: {
     color: '#D9D9D9',

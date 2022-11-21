@@ -32,7 +32,7 @@ export default StyleSheet.create({
     marginTop: 18,
   },
   Roboto12White: {
-    color: '#FFF',
+    color: '#FFFFFF',
     fontFamily: 'Roboto-Regular',
     fontWeight: '400',
     fontSize: 12,

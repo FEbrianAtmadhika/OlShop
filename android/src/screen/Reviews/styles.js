@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-
+import Colors from '../../Stylish/Colors';
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -55,5 +55,20 @@ export default StyleSheet.create({
     height: 15,
     width: 15,
   },
-  content: {},
+  viewreviews: {
+    backgroundColor: 'white',
+    marginVertical: 10,
+    padding: 10,
+    borderRadius: 10,
+    width: '100%',
+    height: 170,
+    justifyContent: 'space-around',
+  },
+  footerreviews: {
+    flexDirection: 'row',
+    alignContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginHorizontal: 20,
+  },
 });

@@ -2,6 +2,8 @@ import P1 from '../../assets/images/P1.png';
 import P2 from '../../assets/images/P2.png';
 import P3 from '../../assets/images/P3.png';
 import P4 from '../../assets/images/P4.png';
+import icon from '../../assets/images/toko.png';
+import image from '../../assets/images/shoppic.png';
 
 const array = [
   {
@@ -61,6 +63,36 @@ const array = [
     id: '2',
     rating: 4,
     jumlahrating: 30,
+    detailrating: [
+      {
+        idrating: '1',
+        namarating: 'Marilyn Dias',
+        ket: 'Ndak Tau Yo Tanya Saya',
+        tgl: '26 October 2022',
+        rating: 3,
+      },
+      {
+        idrating: '2',
+        namarating: 'Marilyn Dias',
+        ket: 'Selamat Anda Di Prank Asw',
+        tgl: '26 October 2022',
+        rating: 5,
+      },
+      {
+        idrating: '3',
+        namarating: 'Marilyn Dias',
+        ket: 'AwikWokAwikWokAwikWokAwikWokAwikWok',
+        tgl: '26 October 2022',
+        rating: 2,
+      },
+      {
+        idrating: '4',
+        namarating: 'Marilyn Dias',
+        ket: 'Entahlah Mending Turu Brutal Aja Kali Cuy ',
+        tgl: '26 October 2022',
+        rating: 1,
+      },
+    ],
   },
   {
     nama: 'Shirt',
@@ -75,6 +107,36 @@ const array = [
     id: '3',
     rating: 1,
     jumlahrating: 40,
+    detailrating: [
+      {
+        idrating: '1',
+        namarating: 'Marilyn Dias',
+        ket: 'Ndak Tau Yo Tanya Saya',
+        tgl: '26 October 2022',
+        rating: 3,
+      },
+      {
+        idrating: '2',
+        namarating: 'Marilyn Dias',
+        ket: 'Selamat Anda Di Prank Asw',
+        tgl: '26 October 2022',
+        rating: 5,
+      },
+      {
+        idrating: '3',
+        namarating: 'Marilyn Dias',
+        ket: 'AwikWokAwikWokAwikWokAwikWokAwikWok',
+        tgl: '26 October 2022',
+        rating: 2,
+      },
+      {
+        idrating: '4',
+        namarating: 'Marilyn Dias',
+        ket: 'Entahlah Mending Turu Brutal Aja Kali Cuy ',
+        tgl: '26 October 2022',
+        rating: 1,
+      },
+    ],
   },
   {
     nama: 'Sneaker',
@@ -89,6 +151,49 @@ const array = [
     id: '4',
     rating: 5,
     jumlahrating: 50,
+    detailrating: [
+      {
+        idrating: '1',
+        namarating: 'Marilyn Dias',
+        ket: 'Ndak Tau Yo Tanya Saya',
+        tgl: '26 October 2022',
+        rating: 3,
+      },
+      {
+        idrating: '2',
+        namarating: 'Marilyn Dias',
+        ket: 'Selamat Anda Di Prank Asw',
+        tgl: '26 October 2022',
+        rating: 5,
+      },
+      {
+        idrating: '3',
+        namarating: 'Marilyn Dias',
+        ket: 'AwikWokAwikWokAwikWokAwikWokAwikWok',
+        tgl: '26 October 2022',
+        rating: 2,
+      },
+      {
+        idrating: '4',
+        namarating: 'Marilyn Dias',
+        ket: 'Entahlah Mending Turu Brutal Aja Kali Cuy ',
+        tgl: '26 October 2022',
+        rating: 1,
+      },
+    ],
   },
 ];
-export default {array};
+
+const Shop = {
+  nama: 'Fitrah_Shop',
+  status: '1',
+  description: 'Tokonya Gak Tau Yang Punya Siapa Cuy',
+  instagram: 'fitrah_shop',
+  Line: 'fitrahshop',
+  iconshop: icon,
+  rating: '4.9',
+  jmlproduk: '30',
+  image1: image,
+  produk: array,
+};
+export default {array, Shop};
