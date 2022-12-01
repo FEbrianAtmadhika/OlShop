@@ -1,11 +1,7 @@
-// In App.js in a new project
-
-import * as React from 'react';
 import {View, Text} from 'react-native';
-import Navigation from './android/src/component/navigation';
-import Product from './android/src/screen/Product';
-function App() {
-  return <Navigation />;
-}
+import React from 'react';
+import Navigation from './src/component/navigation';
 
-export default App;
+export default function App() {
+  return <Navigation></Navigation>;
+}
