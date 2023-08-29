@@ -35,8 +35,9 @@ export default function Index({navigation}) {
     }, 1000);
     return () => clearInterval(timer);
   });
-  return (
-    <ScrollView>
+
+  function renderHeader() {
+    return (
       <View style={styles.container}>
         <View style={styles.header}>
           <Text style={Font.HennyPenny30}>Vēcō</Text>
@@ -122,25 +123,31 @@ export default function Index({navigation}) {
           <Text style={Font.caudex24black}> : </Text>
           <Text style={styles.timer}>{second}</Text>
         </View>
-        <View style={styles.card}>
-          <FlatList
-            data={produk.array}
-            renderItem={({item}) => {
-              return (
-                <Card
-                  image={item.image}
-                  nama={item.nama}
-                  harga={item.harga}
-                  onPress={() =>
-                    navigation.navigate('Details', {data: item})
-                  }></Card>
-              );
-            }}
-            keyExtractor={produk => produk.id.toString()}
-            numColumns={'2'}
-          />
-        </View>
       </View>
-    </ScrollView>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={produk.array}
+        ListHeaderComponent={renderHeader()}
+        showsVerticalScrollIndicator={false}
+        columnWrapperStyle={{justifyContent: 'center'}}
+        renderItem={({item}) => {
+          return (
+            <Card
+              image={item.image}
+              nama={item.nama}
+              harga={item.harga}
+              onPress={() =>
+                navigation.navigate('Details', {data: item})
+              }></Card>
+          );
+        }}
+        keyExtractor={produk => produk.id.toString()}
+        numColumns={'2'}
+      />
+    </View>
   );
 }

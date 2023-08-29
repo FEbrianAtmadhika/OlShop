@@ -2,9 +2,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    borderRadius: 35,
     backgroundColor: '#E9E9E9',
-    paddingHorizontal: 10,
   },
   header: {
     height: 50,
@@ -76,6 +74,6 @@ export default StyleSheet.create({
     bottom: -15,
   },
   card: {
-    alignSelf: 'center',
+    justifyContent: 'center',
   },
 });

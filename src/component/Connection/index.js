@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
 const firebaseConfig = {
   apiKey: 'AIzaSyDT-3Bmd4_H9olAFGRzn5R9bCZEthwU7ZU',
   authDomain: 'olshop-f2b66.firebaseapp.com',
@@ -13,4 +14,5 @@ const firebaseConfig = {
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
+
 export {firebase};

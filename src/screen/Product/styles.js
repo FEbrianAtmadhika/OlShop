@@ -44,7 +44,7 @@ export default StyleSheet.create({
     height: 35,
     paddingHorizontal: 15,
     alignItems: 'flex-end',
-    marginTop: 25,
+    marginVertical: 25,
   },
   sortby: {
     flexDirection: 'row',
@@ -67,8 +67,5 @@ export default StyleSheet.create({
     height: 10,
     width: 10,
   },
-  card: {
-    alignSelf: 'center',
-    marginTop: 20,
-  },
+  card: {justifyContent: 'center'},
 });

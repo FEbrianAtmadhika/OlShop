@@ -29,34 +29,43 @@ export default function Index({navigation}) {
       <Text style={Font.Roboto14w400}></Text>
     </View>;
   }
-  return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Back navigation={navigation} />
-        <TextInput
-          placeholder={'Seach'}
-          keyboardtype={'text'}
-          tisty={styles.searchti}
-        />
-        <Image source={search} style={styles.iconsearch} />
-        <Btn
-          label={'Filter (2)'}
-          btnStyle={styles.filterbut}
-          textstyle={Font.Roboto14center}
-          type={'black'}
-        />
-      </View>
-      <View style={styles.subheader}>
-        <Text style={Font.Roboto14center}>Sort By</Text>
-        <View style={styles.sortby}>
-          <Text style={Font.Roboto14w400}>Relevancy</Text>
-          <TouchableOpacity>
-            <Icon name="chevron-down-outline" style={styles.iconsort} />
-          </TouchableOpacity>
+  function header() {
+    return (
+      <View>
+        <View style={styles.header}>
+          <Back navigation={navigation} />
+          <TextInput
+            placeholder={'Seach'}
+            keyboardtype={'text'}
+            tisty={styles.searchti}
+          />
+          <Image source={search} style={styles.iconsearch} />
+          <Btn
+            label={'Filter (2)'}
+            btnStyle={styles.filterbut}
+            textstyle={Font.Roboto14center}
+            type={'black'}
+          />
+        </View>
+        <View style={styles.subheader}>
+          <Text style={Font.Roboto14center}>Sort By</Text>
+          <View style={styles.sortby}>
+            <Text style={Font.Roboto14w400}>Relevancy</Text>
+            <TouchableOpacity>
+              <Icon name="chevron-down-outline" style={styles.iconsort} />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
+    );
+  }
+  return (
+    <View style={styles.container}>
       <View style={styles.card}>
         <FlatList
+          ListHeaderComponent={header()}
+          showsHorizontalScrollIndicator={false}
+          columnWrapperStyle={styles.card}
           data={produk.array}
           renderItem={({item}) => {
             return (

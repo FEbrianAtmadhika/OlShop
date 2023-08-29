@@ -196,4 +196,65 @@ const Shop = {
   image1: image,
   produk: array,
 };
-export default {array, Shop};
+
+const Cart = [
+  {
+    namashop: 'Dhika Shop',
+    produk: [
+      {
+        nama: 'Black Jacket',
+        image: P1,
+        harga: 90,
+        size: 'L',
+        color: 'Black',
+        jumlah: 1,
+      },
+      {
+        nama: 'Pink Shoes',
+        image: P2,
+        harga: 90,
+        size: '40',
+        color: 'white',
+        jumlah: 1,
+      },
+      {
+        nama: 'Shirt',
+        image: P3,
+        harga: 90,
+        size: 'S',
+        color: 'White',
+        jumlah: 1,
+      },
+    ],
+  },
+  {
+    namashop: 'fitrah shop',
+    produk: [
+      {
+        nama: 'Black Jacket',
+        image: P1,
+        harga: 90,
+        size: 'L',
+        color: 'Black',
+        jumlah: 1,
+      },
+      {
+        nama: 'Pink Shoes',
+        image: P2,
+        harga: 90,
+        size: '40',
+        color: 'white',
+        jumlah: 1,
+      },
+      {
+        nama: 'Shirt',
+        image: P3,
+        harga: 90,
+        size: 'S',
+        color: 'White',
+        jumlah: 1,
+      },
+    ],
+  },
+];
+export default {array, Shop, Cart};

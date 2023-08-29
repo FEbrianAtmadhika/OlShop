@@ -7,6 +7,8 @@ export default StyleSheet.create({
     alignContent: 'center',
     height: 30,
     width: '30%',
+    backgroundColor: 'white',
+    borderRadius: 25,
   },
   reviewstyle: {
     justifyContent: 'space-between',
